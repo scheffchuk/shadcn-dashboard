@@ -30,7 +30,7 @@ const chartData = [
   { month: "June", desktop: 214, mobile: 140 },
 ];
 
-export default function AppBarChrat() {
+export default function BarChartComponent() {
   return (
     <>
       <h1 className="text-lg font-medium mb-6">Total</h1>

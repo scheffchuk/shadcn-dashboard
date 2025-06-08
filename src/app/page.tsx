@@ -1,16 +1,20 @@
-import AppBarChrat from "@/components/app-barchart";
+import AreaChartComponent from "@/components/area-chart";
+import BarChartComponent from "@/components/bar-chart";
+import PieChartComponent from "@/components/pie-chart";
 
 export default function Homepage() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-4">
       <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-1 2xl:col-span-2">
-        <AppBarChrat />
+        <BarChartComponent />
       </div>
       <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
-      <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
+      <div className="bg-primary-foreground p-4 rounded-lg">
+        <PieChartComponent />
+      </div>
       <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
       <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-1 2xl:col-span-2">
-        Test
+        <AreaChartComponent />
       </div>
       <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
     </div>

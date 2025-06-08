@@ -14,13 +14,22 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
+import { SidebarTrigger } from "./ui/sidebar";
 
 export default function Navbar() {
   const { setTheme } = useTheme();
+  // const { toggleSidebar } = useSidebar();
 
   return (
     <nav className="flex p-4 items-center justify-between">
-      CollapseButton
+      <SidebarTrigger className="cursor-pointer" />
+      {/* <Button
+        variant="outline"
+        onClick={toggleSidebar}
+        className="cursor-pointer"
+      >
+        <Dog />
+      </Button> */}
       <div className="flex items-center gap-4">
         <Link href="/">Dashboard</Link>
         {/* THEME MENU */}

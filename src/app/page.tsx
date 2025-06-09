@@ -2,6 +2,7 @@ import AreaChartComponent from "@/components/area-chart";
 import BarChartComponent from "@/components/bar-chart";
 import CardList from "@/components/card-list";
 import PieChartComponent from "@/components/pie-chart";
+import TodoList from "@/components/todo-list";
 
 export default function Homepage() {
   return (
@@ -15,7 +16,9 @@ export default function Homepage() {
       <div className="bg-primary-foreground p-4 rounded-lg">
         <PieChartComponent />
       </div>
-      <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
+      <div className="bg-primary-foreground p-4 rounded-lg">
+        <TodoList />
+      </div>
       <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-1 2xl:col-span-2">
         <AreaChartComponent />
       </div>

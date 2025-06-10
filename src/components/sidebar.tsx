@@ -206,7 +206,7 @@ export default function AppSidebar() {
               <DropdownMenuTrigger asChild className="cursor-pointer">
                 <SidebarMenuButton>
                   <User2 />
-                  Scheff
+                  Sushi
                   <ChevronUp className="ml-auto" />
                 </SidebarMenuButton>
               </DropdownMenuTrigger>

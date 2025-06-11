@@ -21,7 +21,7 @@ export default function Navbar() {
   // const { toggleSidebar } = useSidebar();
 
   return (
-    <nav className="flex p-4 items-center justify-between">
+    <nav className="flex p-4 items-center justify-between sticky top-0 bg-background z-10">
       <SidebarTrigger className="cursor-pointer" />
       {/* <Button
         variant="outline"

@@ -22,6 +22,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import EditUser from "@/components/edit-user";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { MultipleLineChartComponent } from "@/components/line-chart";
 
 export default function SingleUserPage() {
   return (
@@ -168,7 +169,10 @@ export default function SingleUserPage() {
             </p>
           </div>
           {/* CHART CONTAINER  */}
-          <div className="bg-primary-foreground p-4 rounded-lg">Chart</div>
+          <div className="bg-primary-foreground p-4 rounded-lg space-y-2">
+            <h1 className="text-xl font-semibold">User Activity</h1>
+            <MultipleLineChartComponent />
+          </div>
         </div>
       </div>
     </div>
